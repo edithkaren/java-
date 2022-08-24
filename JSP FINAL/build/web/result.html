@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+    <!-- Title Page-->
+    <title>IBM-link-7</title>
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+
+    <style>
+        svg {
+            width: 100px;
+            display: block;
+            margin: 40px auto 0;
+        }
+
+        .path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 0;
+        }
+
+        .circle {
+            -webkit-animation: dash .9s ease-in-out;
+            animation: dash .9s ease-in-out;
+        }
+
+        .line {
+            stroke-dashoffset: 1000;
+            -webkit-animation: dash .9s .35s ease-in-out forwards;
+            animation: dash .9s .35s ease-in-out forwards;
+        }
+
+        .check {
+            stroke-dashoffset: -100;
+            -webkit-animation: dash-check .9s .35s ease-in-out forwards;
+            animation: dash-check .9s .35s ease-in-out forwards;
+        }
+        
+
+        @-webkit-keyframes dash {
+            0% {
+                stroke-dashoffset: 1000;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @keyframes dash {
+            0% {
+                stroke-dashoffset: 1000;
+            }
+
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        @-webkit-keyframes dash-check {
+            0% {
+                stroke-dashoffset: -100;
+            }
+
+            100% {
+                stroke-dashoffset: 900;
+            }
+        }
+
+        @keyframes dash-check {
+            0% {
+                stroke-dashoffset: -100;
+            }
+
+            100% {
+                stroke-dashoffset: 900;
+            }
+        }
+
+        .meraFlex{
+            display: flex;
+            flex-direction: row;
+            justify-content:space-around;
+            align-items: center;
+        }
+        .meraFlex2{
+            display: flex;
+            flex-direction: column;
+            justify-content:space-evenly;
+            align-items: center;
+        }
+    .meraSvg{
+        margin: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title"></h2>
+                </div>
+                
+                <div class="card-body meraFlex">
+                    <svg  class = "meraSvg" width="100px" height="200px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 130.2 130.2">
+                        <circle class="path circle" fill="none" stroke="#73AF55" stroke-width="6" stroke-miterlimit="10"
+                            cx="65.1" cy="65.1" r="62.1" />
+                        <polyline class="path check" fill="none" stroke="#73AF55" stroke-width="6"
+                            stroke-linecap="round" stroke-miterlimit="10" points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+                    </svg>
+                    <div class="success">
+                        <h1 style="text-align: center; color:green; font-size:50px;">
+                           Success
+                        </h1>
+                        <br><br>
+                        <div style="text-align: center;">
+                        
+                            <h4>Your Response has been recorded successfully.</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+<br><br>
+            <div class="card card-5">
+
+                <div class="card-body meraFlex2">
+
+                    <div style="text-align: center;">If You want a PDF copy Your response click the download button.👇️</div>
+                <br> 
+                <form method="POST" action="Result.jsp" enctype="multipart/form-data"> 
+                    <div>
+                        <button class="btn btn--blue btn--radius-2" type="button" >Download</button>
+                    </div> 
+                </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
